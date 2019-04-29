@@ -1,0 +1,34 @@
+# lattice-scale --inv-acoustic-scale=13 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/13.txt 
+# Started at Mon Jan 28 18:47:14 EST 2019
+#
+lattice-scale --inv-acoustic-scale=13 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-001, best cost 217.116 + 13296.3 = 13513.5 over 1878 frames.
+PARTICIPANT71834-001 ACCORDION WEEKEND THAT THE ONE WE IT'S THEY KNOW FROM LATER SO THAT AND WE DEFINITELY PERFECT BECAUSE I ALWAYS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-003, best cost 128.382 + 5745.46 = 5873.84 over 778 frames.
+PARTICIPANT71834-003 AND WEEKEND ANYWAY BACK WEEKEND TO TO SO SO OTHER SO OF WEEKEND WHATEVER 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-004, best cost 253.144 + 11874.9 = 12128.1 over 1628 frames.
+PARTICIPANT71834-004 WEEKEND TO OKAY GOING INTRODUCTIONS WE'RE IT'S IT REASON IDEA FOR LITTLE WHAT SIGNIFICANT CAUSE THE IS GETTING BEING FORTY CITY RECORDING THAT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-006, best cost 18.1802 + 510.585 = 528.765 over 68 frames.
+PARTICIPANT71834-006 THAT WEEKEND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-008, best cost 27.4451 + 1058.85 = 1086.3 over 148 frames.
+PARTICIPANT71834-008 SOMEONE FOR 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-010, best cost 18.1089 + 688.51 = 706.619 over 98 frames.
+PARTICIPANT71834-010 ON THAT'S 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-012, best cost 62.2372 + 3053.82 = 3116.06 over 398 frames.
+PARTICIPANT71834-012 WITHOUT SIGNIFICANT INTRODUCTIONS STUFF 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-014, best cost 19.8151 + 647.601 = 667.417 over 88 frames.
+PARTICIPANT71834-014 ARE CAUSE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-016, best cost 14.228 + 802.125 = 816.353 over 108 frames.
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 11 lattices.
+PARTICIPANT71834-016 WAS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-018, best cost 11.8698 + 465.569 = 477.438 over 58 frames.
+PARTICIPANT71834-018 THAT 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 11 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-020, best cost 21.3887 + 872.674 = 894.063 over 118 frames.
+PARTICIPANT71834-020 ALSO SO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 7.41587 = 0.147525 [graph] + 7.26834 [acoustic] over 5368 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 11 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Jan 28 18:47:16 EST 2019, elapsed time 2 seconds

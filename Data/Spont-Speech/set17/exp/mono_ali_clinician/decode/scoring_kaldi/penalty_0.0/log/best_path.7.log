@@ -1,0 +1,16 @@
+# lattice-scale --inv-acoustic-scale=7 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set17/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set17/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set17/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set17/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/7.txt 
+# Started at Mon Jan 28 18:39:29 EST 2019
+#
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set17/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=7 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set17/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 2 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT14630-002, best cost 133.114 + 13425.1 = 13558.2 over 1078 frames.
+PARTICIPANT14630-002 I'VE WAS COURSE TO AND CAN FOR WORKS AND ON IT'S FAMILY AND ACTUALLY 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 2 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT14630-004, best cost 137.792 + 11230.5 = 11368.3 over 881 frames.
+PARTICIPANT14630-004 SICK THAT NOTICED ON A EXCITED CAN AND AND AND NICE DOES TO DIFFERENCE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 12.7241 = 0.138288 [graph] + 12.5858 [acoustic] over 1959 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 2 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Jan 28 18:39:30 EST 2019, elapsed time 1 seconds

@@ -1,0 +1,39 @@
+# gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/decode/depth_stats_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/graph 
+# Started at Mon Jan 28 18:33:15 EST 2019
+#
+The total amount of data analyzed assuming 100 frames per second is 0.0 hours
+Overall, lattice depth (10,50,90-percentile)=(48,140,2978) and mean=689.9
+Nonsilence phones as a group account for 78.3% of frames, with lattice depth (10,50,90-percentile)=(71,170,3031) and mean=833.5
+Phone sil accounts for 21.7% of frames, with lattice depth (10,50,90-percentile)=(5,60,502) and mean=171.9
+Phone eh_I accounts for 8.4% of frames, with lattice depth (10,50,90-percentile)=(140,2770,3217) and mean=2190.4
+Phone ih_I accounts for 7.5% of frames, with lattice depth (10,50,90-percentile)=(121,943,2194) and mean=1136.4
+Phone r_I accounts for 6.5% of frames, with lattice depth (10,50,90-percentile)=(140,159,2967) and mean=1211.6
+Phone ah_I accounts for 5.1% of frames, with lattice depth (10,50,90-percentile)=(94,116,544) and mean=188.6
+Phone s_I accounts for 4.6% of frames, with lattice depth (10,50,90-percentile)=(121,534,3021) and mean=816.2
+Phone f_B accounts for 4.3% of frames, with lattice depth (10,50,90-percentile)=(71,115,172) and mean=119.5
+Phone iy_E accounts for 4.3% of frames, with lattice depth (10,50,90-percentile)=(21,109,116) and mean=93.8
+Phone w_B accounts for 2.8% of frames, with lattice depth (10,50,90-percentile)=(58,72,100) and mean=79.3
+Phone er_I accounts for 2.5% of frames, with lattice depth (10,50,90-percentile)=(121,121,639) and mean=368.3
+Phone t_E accounts for 2.5% of frames, with lattice depth (10,50,90-percentile)=(170,657,3136) and mean=1754.1
+Phone hh_B accounts for 2.4% of frames, with lattice depth (10,50,90-percentile)=(60,581,585) and mean=400.2
+Phone ay_B accounts for 2.2% of frames, with lattice depth (10,50,90-percentile)=(76,123,123) and mean=126.8
+Phone v_E accounts for 2.2% of frames, with lattice depth (10,50,90-percentile)=(183,504,588) and mean=479.9
+Phone ae_I accounts for 2.1% of frames, with lattice depth (10,50,90-percentile)=(94,94,580) and mean=291.4
+Phone r_B accounts for 1.9% of frames, with lattice depth (10,50,90-percentile)=(121,525,529) and mean=473.7
+Phone n_E accounts for 1.8% of frames, with lattice depth (10,50,90-percentile)=(82,100,100) and mean=98.4
+Phone n_B accounts for 1.7% of frames, with lattice depth (10,50,90-percentile)=(3155,3169,3169) and mean=3166.6
+Phone r_E accounts for 1.7% of frames, with lattice depth (10,50,90-percentile)=(9,37,37) and mean=30.6
+Phone ae_E accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(42,48,48) and mean=46.4
+Phone d_I accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(179,188,1082) and mean=443.4
+Phone hh_I accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(121,121,644) and mean=407.1
+Phone k_I accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(3060,3110,3116) and mean=3110.6
+Phone l_E accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(120,209,532) and mean=307.6
+Phone ay_S accounts for 1.2% of frames, with lattice depth (10,50,90-percentile)=(126,129,137) and mean=130.7
+Phone iy_I accounts for 1.0% of frames, with lattice depth (10,50,90-percentile)=(62,62,62) and mean=62.0
+Phone k_B accounts for 0.8% of frames, with lattice depth (10,50,90-percentile)=(2978,2978,2978) and mean=2978.0
+Phone z_E accounts for 0.8% of frames, with lattice depth (10,50,90-percentile)=(179,179,179) and mean=179.0
+Phone l_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(92,94,94) and mean=93.7
+Phone g_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(659,830,1408) and mean=1135.2
+Phone m_I accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(94,97,97) and mean=96.4
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Jan 28 18:33:15 EST 2019, elapsed time 0 seconds

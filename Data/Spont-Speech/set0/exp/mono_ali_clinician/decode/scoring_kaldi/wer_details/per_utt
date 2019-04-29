@@ -1,0 +1,20 @@
+PARTICIPANT46352-001 ref   NO  NOT  THIS  WEEKEND
+PARTICIPANT46352-001 hyp  ***  ***  NEXT  WEEKEND
+PARTICIPANT46352-001 op    D    D     S      C   
+PARTICIPANT46352-001 #csid 1 1 0 2
+PARTICIPANT46352-003 ref  UM  YES  MY  LITTLE  NIECES     IN    FLORIDA    WERE   TURNED  THIRTEEN  AND  THEIR  JEWISH   SO   THEY  HAD  A  BIG  PARTY   SO   WE  WENT  DOWN  THERE   IT   WAS   LOTS      OF     FUN
+PARTICIPANT46352-003 hyp  ON  YES  MY    ***     ***   WEEKEND    AND    WEREN'T    ARE   TREATERS  AND   ***     ***   AREA  WILL   OF  A  ***   ***   ***  ***   ***   ***   ***   ***  CRAZY   IN   DIAGNOSIS  FUN
+PARTICIPANT46352-003 op    S   C    C     D       D       S        S        S        S        S      C     D       D      S     S    S   C   D     D     D    D     D     D     D     D     S      S       S       C 
+PARTICIPANT46352-003 #csid 5 12 0 12
+PARTICIPANT46352-005 ref   IT  WAS  IT'S   A   BIG  DEAL  LIKE        A       WEDDING  RECEPTION
+PARTICIPANT46352-005 hyp  ***  ***   ***  ***  ***   ***   THE  RIDICULOUSLY   WE'RE      THAT  
+PARTICIPANT46352-005 op    D    D     D    D    D     D     S         S          S         S    
+PARTICIPANT46352-005 #csid 0 4 0 6
+PARTICIPANT46352-007 ref  THEY  LIVE  NEAR  TAMPA
+PARTICIPANT46352-007 hyp   AND  HERE  HAVE    OF 
+PARTICIPANT46352-007 op     S     S     S     S  
+PARTICIPANT46352-007 #csid 0 4 0 0
+PARTICIPANT46352-009 ref  ***  SAINT  PETE
+PARTICIPANT46352-009 hyp  WHY   AND    HE 
+PARTICIPANT46352-009 op    I     S      S 
+PARTICIPANT46352-009 #csid 0 2 1 0

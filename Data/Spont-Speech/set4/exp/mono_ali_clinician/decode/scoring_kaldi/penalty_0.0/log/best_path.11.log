@@ -1,0 +1,42 @@
+# lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set4/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set4/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set4/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set4/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/11.txt 
+# Started at Mon Jan 28 18:51:59 EST 2019
+#
+lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set4/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set4/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-001, best cost 30.59 + 1837.29 = 1867.88 over 213 frames.
+PARTICIPANT52053-001 WILL AND YOU 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-003, best cost 23.5104 + 1131.16 = 1154.67 over 128 frames.
+PARTICIPANT52053-003 YES FROM 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-005, best cost 24.4204 + 940.365 = 964.785 over 106 frames.
+PARTICIPANT52053-005 ANTI KNOW 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-007, best cost 17.0623 + 752.872 = 769.934 over 88 frames.
+PARTICIPANT52053-007 AND SO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-009, best cost 62.432 + 2922.58 = 2985.02 over 338 frames.
+PARTICIPANT52053-009 KNOW WAS WAS FROM WE'LL FIND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-011, best cost 96.8 + 5256.45 = 5353.25 over 608 frames.
+PARTICIPANT52053-011 AND CLINICAL THE I I THAT LAST AND COMMUNITY FORTY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-013, best cost 57.2188 + 2508.19 = 2565.41 over 298 frames.
+PARTICIPANT52053-013 THE LIKE SUNDAY THEN TO THE A 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-015, best cost 13.0266 + 570.571 = 583.597 over 68 frames.
+PARTICIPANT52053-015 YOUR 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-017, best cost 12.2413 + 584.652 = 596.893 over 68 frames.
+PARTICIPANT52053-017 ARE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-019, best cost 49.7159 + 2565.52 = 2615.24 over 288 frames.
+PARTICIPANT52053-019 ADRIAN WE TO MCKENZIE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-021, best cost 9.66082 + 301.639 = 311.299 over 33 frames.
+PARTICIPANT52053-021 THE 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 15 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-023, best cost 40.3102 + 1908.89 = 1949.2 over 218 frames.
+PARTICIPANT52053-023 WHEN OKAY NEXT OKAY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-025, best cost 11.9694 + 483.396 = 495.365 over 58 frames.
+PARTICIPANT52053-025 YEAH 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-027, best cost 8.9318 + 227.288 = 236.219 over 28 frames.
+PARTICIPANT52053-027 YOU 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 15 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT52053-029, best cost 112.129 + 6900.25 = 7012.38 over 778 frames.
+PARTICIPANT52053-029 YES IT EXCITING TECHNICALLY ANALYZE YES SHOWS FIREWORKS THERE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 8.87919 = 0.171796 [graph] + 8.7074 [acoustic] over 3318 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 15 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Jan 28 18:52:00 EST 2019, elapsed time 1 seconds

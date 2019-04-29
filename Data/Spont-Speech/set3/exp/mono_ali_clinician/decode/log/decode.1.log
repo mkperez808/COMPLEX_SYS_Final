@@ -1,0 +1,34 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/decode/lat.1.gz" 
+# Started at Mon Jan 28 18:49:48 EST 2019
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/val/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.0.23~1-f7b2f]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 11 utterances, errors on 0
+PARTCIPANT82975-001 WEEKEND WERE THERE'S 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-001 is -7.76075 over 188 frames.
+PARTCIPANT82975-003 AND AND I 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-003 is -7.89479 over 118 frames.
+PARTCIPANT82975-005 HAVE OBSERVING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-005 is -7.96523 over 128 frames.
+PARTCIPANT82975-007 WEEKEND I'VE THAT I'M VISITED YES 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-007 is -7.84323 over 308 frames.
+PARTCIPANT82975-009 TO ANY DEFINITELY MONDAY 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-009 is -7.73311 over 198 frames.
+PARTCIPANT82975-011 YOUR WEEKEND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-011 is -8.21324 over 98 frames.
+PARTCIPANT82975-013 NICE WINTERS 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-013 is -8.06693 over 158 frames.
+PARTCIPANT82975-015 THIS 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-015 is -9.14264 over 38 frames.
+PARTCIPANT82975-017 WELL 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-017 is -8.39279 over 68 frames.
+PARTCIPANT82975-019 THE EXCITING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-019 is -8.98621 over 128 frames.
+PARTCIPANT82975-021 THE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT82975-021 is -8.76735 over 28 frames.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:176) Time taken 15.3201s: real-time factor assuming 100 frames/sec is 1.05076
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:179) Done 11 utterances, failed for 0
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.05922 over 1458 frames.
+# Accounting: time=16 threads=1
+# Ended (code 0) at Mon Jan 28 18:50:04 EST 2019, elapsed time 16 seconds

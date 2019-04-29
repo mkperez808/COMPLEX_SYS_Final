@@ -1,0 +1,32 @@
+# extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/mfcc/log/segments.1 ark:- | compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- | copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/mfcc/raw_mfcc_val.1.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/mfcc/raw_mfcc_val.1.scp 
+# Started at Mon Jan 28 10:55:42 EST 2019
+#
+extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/mfcc/log/segments.1 ark:- 
+copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/mfcc/raw_mfcc_val.1.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/val/mfcc/raw_mfcc_val.1.scp 
+compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- 
+sox WARN rate: rate clipped 165 samples; decrease volume?
+sox WARN dither: dither clipped 142 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-013
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-015
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-017
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-019
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-021
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-023
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-025
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-027
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-029
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-031
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-033
+LOG (extract-segments[5.0.23~1-f7b2f]:main():extract-segments.cc:194) Successfully processed 18 lines out of 18 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-035
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:181)  Done 18 out of 18 utterances.
+LOG (copy-feats[5.0.23~1-f7b2f]:main():copy-feats.cc:120) Copied 18 feature matrices.
+# Accounting: time=8 threads=1
+# Ended (code 0) at Mon Jan 28 10:55:50 EST 2019, elapsed time 8 seconds

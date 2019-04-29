@@ -1,0 +1,14 @@
+# extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/mfcc/log/segments.2 ark:- | compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- | copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/mfcc/raw_mfcc_val.2.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/mfcc/raw_mfcc_val.2.scp 
+# Started at Mon Jan 28 10:55:17 EST 2019
+#
+extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/mfcc/log/segments.2 ark:- 
+compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- 
+copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/mfcc/raw_mfcc_val.2.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set1/val/mfcc/raw_mfcc_val.2.scp 
+LOG (extract-segments[5.0.23~1-f7b2f]:main():extract-segments.cc:194) Successfully processed 3 lines out of 3 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-013
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:181)  Done 3 out of 3 utterances.
+LOG (copy-feats[5.0.23~1-f7b2f]:main():copy-feats.cc:120) Copied 3 feature matrices.
+# Accounting: time=6 threads=1
+# Ended (code 0) at Mon Jan 28 10:55:23 EST 2019, elapsed time 6 seconds

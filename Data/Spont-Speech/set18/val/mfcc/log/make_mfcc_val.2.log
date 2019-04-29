@@ -1,0 +1,38 @@
+# extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/mfcc/log/segments.2 ark:- | compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- | copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/mfcc/raw_mfcc_val.2.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/mfcc/raw_mfcc_val.2.scp 
+# Started at Mon Jan 28 10:56:12 EST 2019
+#
+copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/mfcc/raw_mfcc_val.2.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/mfcc/raw_mfcc_val.2.scp 
+extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/mfcc/log/segments.2 ark:- 
+compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- 
+sox WARN rate: rate clipped 39 samples; decrease volume?
+sox WARN dither: dither clipped 34 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-048
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-050
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-052
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-054
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-056
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-058
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-060
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-062
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-065
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-066
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-068
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-070
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-072
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-074
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-075
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-079
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-081
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-083
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-085
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-087
+LOG (extract-segments[5.0.23~1-f7b2f]:main():extract-segments.cc:194) Successfully processed 23 lines out of 23 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-090
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-092
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICPANT84596-095
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:181)  Done 23 out of 23 utterances.
+LOG (copy-feats[5.0.23~1-f7b2f]:main():copy-feats.cc:120) Copied 23 feature matrices.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Mon Jan 28 10:56:19 EST 2019, elapsed time 7 seconds

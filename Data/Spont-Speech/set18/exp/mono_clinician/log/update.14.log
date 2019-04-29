@@ -1,0 +1,41 @@
+# gmm-est --write-occs=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/15.occs --mix-up=510 --power=0.25 /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.mdl "gmm-sum-accs - /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.*.acc|" /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/15.mdl 
+# Started at Mon Jan 28 18:40:14 EST 2019
+#
+gmm-est --write-occs=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/15.occs --mix-up=510 --power=0.25 /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.mdl 'gmm-sum-accs - /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.*.acc|' /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/15.mdl 
+gmm-sum-accs - /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.1.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.10.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.11.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.12.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.2.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.3.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.4.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.5.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.6.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.7.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.8.acc /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/14.9.acc 
+LOG (gmm-sum-accs[5.0.23~1-f7b2f]:main():gmm-sum-accs.cc:63) Summed 12 stats, total count 76380, avg like/frame -91.418
+LOG (gmm-sum-accs[5.0.23~1-f7b2f]:main():gmm-sum-accs.cc:66) Total count of stats is 76380
+LOG (gmm-sum-accs[5.0.23~1-f7b2f]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.0.23~1-f7b2f]:MleUpdate():transition-model.cc:517) TransitionModel::Update, objf change is 0.000537049 per frame over 76380 frames. 
+LOG (gmm-est[5.0.23~1-f7b2f]:MleUpdate():transition-model.cc:520) 19 probabilities floored, 272 out of 589 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.0.23~1-f7b2f]:main():gmm-est.cc:102) Transition model update: Overall 0.000537049 log-like improvement per frame over 76380 frames.
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 5, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 5, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 5, weight = 1
+WARNING (gmm-est[5.0.23~1-f7b2f]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 6, weight = 1
+LOG (gmm-est[5.0.23~1-f7b2f]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 13 variance elements floored in 13 Gaussians, out of 483
+LOG (gmm-est[5.0.23~1-f7b2f]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 0 Gaussians due to counts < --min-gaussian-occupancy=10 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.0.23~1-f7b2f]:main():gmm-est.cc:113) GMM update: Overall 0.102632 objective function improvement per frame over 76380 frames
+LOG (gmm-est[5.0.23~1-f7b2f]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = -91.418 over 76380 frames.
+LOG (gmm-est[5.0.23~1-f7b2f]:SplitByCount():am-diag-gmm.cc:116) Split 146 states with target = 510, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 483 to 512
+LOG (gmm-est[5.0.23~1-f7b2f]:main():gmm-est.cc:146) Written model to /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_clinician/15.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Jan 28 18:40:14 EST 2019, elapsed time 0 seconds

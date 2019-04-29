@@ -1,0 +1,2 @@
+compute-cmvn-stats --spk2utt=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/val/spk2utt scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/val/feats.scp ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/val/mfcc/cmvn_val.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/val/mfcc/cmvn_val.scp 
+LOG (compute-cmvn-stats[5.0.23~1-f7b2f]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 4 utterances; 0 had errors.

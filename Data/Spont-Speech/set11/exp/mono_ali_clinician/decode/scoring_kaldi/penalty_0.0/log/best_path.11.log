@@ -1,0 +1,26 @@
+# lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set11/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set11/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set11/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set11/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/11.txt 
+# Started at Mon Jan 28 18:18:49 EST 2019
+#
+lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set11/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set11/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-001, best cost 149.564 + 9128.99 = 9278.55 over 1078 frames.
+PARTICIPANT78080-001 YEAH WEEKEND ANY AND AND LIKE DEAL WE FOR I I IT TO KNOW WAS WEEKEND CAN 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-003, best cost 57.786 + 3098.49 = 3156.27 over 355 frames.
+PARTICIPANT78080-003 THE WAS WEEKEND ALSO QUESTIONS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-005, best cost 21.9423 + 1045.79 = 1067.73 over 118 frames.
+PARTICIPANT78080-005 IT WELL 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-007, best cost 16.3093 + 969.189 = 985.499 over 108 frames.
+PARTICIPANT78080-007 LAST 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-009, best cost 77.1751 + 3889.21 = 3966.38 over 461 frames.
+PARTICIPANT78080-009 LIKE TO LIKE CAUSES DON'T WEEKEND ISH I 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 7 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-011, best cost 77.0377 + 3937.72 = 4014.76 over 458 frames.
+PARTICIPANT78080-011 THAT'S WE I EVERYONE LIKE WAS WAS HISTORY 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 7 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78080-013, best cost 36.8384 + 1667.88 = 1704.72 over 196 frames.
+PARTICIPANT78080-013 I WEEKEND WEEKEND IT'S 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 8.71446 = 0.157409 [graph] + 8.55705 [acoustic] over 2774 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 7 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Jan 28 18:18:51 EST 2019, elapsed time 2 seconds

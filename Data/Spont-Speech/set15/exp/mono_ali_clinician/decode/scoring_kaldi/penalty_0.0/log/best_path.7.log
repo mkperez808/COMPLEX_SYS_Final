@@ -1,0 +1,18 @@
+# lattice-scale --inv-acoustic-scale=7 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/7.txt 
+# Started at Mon Jan 28 18:34:40 EST 2019
+#
+lattice-scale --inv-acoustic-scale=7 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 3 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT59826-001, best cost 29.0552 + 2405.4 = 2434.46 over 168 frames.
+PARTICIPANT59826-001 SIGNIFY KIND 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 3 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT59826-003, best cost 143.321 + 11492 = 11635.3 over 888 frames.
+PARTICIPANT59826-003 WEEKEND CAN AND TO ONE FAMILY MAKES TAKE AND FORGOT FUN HOUSES OF HISTORY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT59826-005, best cost 13.4148 + 594.422 = 607.837 over 43 frames.
+PARTICIPANT59826-005 SEVEN 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 13.3554 = 0.169055 [graph] + 13.1863 [acoustic] over 1099 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 3 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Jan 28 18:34:42 EST 2019, elapsed time 2 seconds

@@ -1,0 +1,18 @@
+# lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_1.0/11.txt 
+# Started at Mon Jan 28 18:34:43 EST 2019
+#
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set15/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 3 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT59826-001, best cost 31.0552 + 1530.71 = 1561.77 over 168 frames.
+PARTICIPANT59826-001 SIGNIFY KIND 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 3 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT59826-003, best cost 125.112 + 7338.47 = 7463.58 over 888 frames.
+PARTICIPANT59826-003 WEEKEND AND SOMEONE FAMILY MAKES BECAUSE FORGOT FLORIDA HISTORY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT59826-005, best cost 14.4148 + 378.268 = 392.683 over 43 frames.
+PARTICIPANT59826-005 SEVEN 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 8.56964 = 0.155216 [graph] + 8.41442 [acoustic] over 1099 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 3 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Jan 28 18:34:45 EST 2019, elapsed time 2 seconds

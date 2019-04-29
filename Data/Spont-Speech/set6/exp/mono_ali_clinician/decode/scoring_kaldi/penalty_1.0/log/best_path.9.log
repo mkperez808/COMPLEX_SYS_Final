@@ -1,0 +1,28 @@
+# lattice-scale --inv-acoustic-scale=9 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_1.0/9.txt 
+# Started at Mon Jan 28 18:56:18 EST 2019
+#
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=9 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-001, best cost 75.1209 + 4505.28 = 4580.4 over 432 frames.
+PARTICIPANT29758-001 I WE WEEKEND HAVE PLANS FORTY AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-003, best cost 86.6234 + 5153.69 = 5240.31 over 488 frames.
+PARTICIPANT29758-003 FINALLY DIRECTORS EXACTLY CLINICAL THAT ACTUALLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-005, best cost 29.2897 + 1901.07 = 1930.36 over 173 frames.
+PARTICIPANT29758-005 CLINICAL I 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-007, best cost 48.9892 + 2136.9 = 2185.89 over 198 frames.
+PARTICIPANT29758-007 I BETWEEN WEEK WEEKEND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-009, best cost 61.432 + 3495.88 = 3557.31 over 328 frames.
+PARTICIPANT29758-009 FAMILY KIND NICE LANDLORD AND 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 8 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-011, best cost 199.665 + 11375.7 = 11575.3 over 1111 frames.
+PARTICIPANT29758-011 DIDN'T IF LIKE GOLF WE THE OKAY I YES FIRST KNOW CANADA DO FUN NEXT CREATE WAS WEEKEND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-013, best cost 18.7664 + 721.816 = 740.583 over 67 frames.
+PARTICIPANT29758-013 THE WHAT 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 8 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT29758-015, best cost 33.1318 + 1614.17 = 1647.3 over 148 frames.
+PARTICIPANT29758-015 AND I REALLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 10.6817 = 0.187782 [graph] + 10.4939 [acoustic] over 2945 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 8 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Jan 28 18:56:20 EST 2019, elapsed time 2 seconds

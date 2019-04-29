@@ -1,0 +1,76 @@
+# lattice-scale --inv-acoustic-scale=13 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_1.0/13.txt 
+# Started at Mon Jan 28 18:38:01 EST 2019
+#
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=13 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-001, best cost 39.5967 + 1669.5 = 1709.1 over 238 frames.
+PARTICIPANT87083-001 YES REALLY YOUR 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-003, best cost 66.7595 + 3528.52 = 3595.28 over 478 frames.
+PARTICIPANT87083-003 AND LONGER FOR TEXTING THE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-005, best cost 131.163 + 6237.9 = 6369.06 over 838 frames.
+PARTICIPANT87083-005 THEN SHUTTERS I HAVEN'T WENT SIGNIFICANT EXPECTING LIKE WHEN THEN 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-007, best cost 50.6696 + 2188.5 = 2239.17 over 298 frames.
+PARTICIPANT87083-007 MONEY YOU TEST IT'S 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-009, best cost 70.9258 + 3958.8 = 4029.72 over 572 frames.
+PARTICIPANT87083-009 DIRECTORS INTERESTING AMAZING DATA 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-012, best cost 15.5658 + 526.848 = 542.414 over 68 frames.
+PARTICIPANT87083-012 RIGHT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-014, best cost 32.6916 + 1043.05 = 1075.75 over 148 frames.
+PARTICIPANT87083-014 AND ARMY AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-016, best cost 79.9275 + 4078.17 = 4158.1 over 568 frames.
+PARTICIPANT87083-016 THE ENGINEERS WAS BETWEEN WELL INTERESTING 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-018, best cost 37.2763 + 1432.82 = 1470.1 over 208 frames.
+PARTICIPANT87083-018 FAMILY AND SEPARATION 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-020, best cost 45.6644 + 1911.45 = 1957.11 over 258 frames.
+PARTICIPANT87083-020 ANTI TRYING CITY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-022, best cost 66.5392 + 3534.86 = 3601.4 over 478 frames.
+PARTICIPANT87083-022 ALL THE SPEAKING A DO YEAH 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-024, best cost 30.8136 + 1249.97 = 1280.78 over 178 frames.
+PARTICIPANT87083-024 TREATMENT YES 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-026, best cost 18.4497 + 755.945 = 774.395 over 108 frames.
+PARTICIPANT87083-026 SO I 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-028, best cost 16.4408 + 658.615 = 675.055 over 88 frames.
+PARTICIPANT87083-028 WEEKEND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-030, best cost 57.3612 + 2514.16 = 2571.52 over 358 frames.
+PARTICIPANT87083-030 ON PURPOSES MISERABLE WELL 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-032, best cost 18.3557 + 510.065 = 528.42 over 68 frames.
+PARTICIPANT87083-032 TO THAT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-034, best cost 64.4368 + 3259.24 = 3323.68 over 448 frames.
+PARTICIPANT87083-034 ALRIGHT INTRODUCTIONS SO FLORIDA TO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-036, best cost 16.8448 + 430.098 = 446.942 over 58 frames.
+PARTICIPANT87083-036 LADY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-038, best cost 35.6736 + 1524.76 = 1560.43 over 218 frames.
+PARTICIPANT87083-038 ANIMALS REMODELING 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-040, best cost 47.2352 + 1979.99 = 2027.22 over 278 frames.
+PARTICIPANT87083-040 MAINTENANCE ANTI START 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-042, best cost 53.4872 + 1893.49 = 1946.98 over 258 frames.
+PARTICIPANT87083-042 RECOMMEND WAS COMPANIES WELL 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-044, best cost 28.0365 + 1266.2 = 1294.24 over 178 frames.
+PARTICIPANT87083-044 YEAH ELEMENTARY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-047, best cost 17.1308 + 611.66 = 628.791 over 88 frames.
+PARTICIPANT87083-047 TUESDAY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-049, best cost 38.654 + 1430.31 = 1468.96 over 208 frames.
+PARTICIPANT87083-049 EVERYTHING FANCY A 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-051, best cost 33.5251 + 1436.51 = 1470.04 over 193 frames.
+PARTICIPANT87083-051 VACATIONS CURRENTLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-053, best cost 64.7709 + 3876.47 = 3941.24 over 548 frames.
+PARTICIPANT87083-053 ELEMENTARY RECORD WANT WEEKEND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-055, best cost 40.0346 + 2169.14 = 2209.17 over 288 frames.
+PARTICIPANT87083-055 YES TO TONIGHT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-057, best cost 11.4835 + 244.25 = 255.734 over 33 frames.
+PARTICIPANT87083-057 HAVE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-059, best cost 84.3082 + 3406.38 = 3490.69 over 478 frames.
+PARTICIPANT87083-059 LAST ON FORGOT AUDITING MY AND ANY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-061, best cost 58.3379 + 2610.08 = 2668.42 over 358 frames.
+PARTICIPANT87083-061 AND LIKE ACCORDION WAS NOT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-063, best cost 36.5454 + 1315.19 = 1351.73 over 178 frames.
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 32 lattices.
+PARTICIPANT87083-063 ANY WEEKEND SHOWER 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 32 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT87083-065, best cost 53.6086 + 2159.47 = 2213.07 over 298 frames.
+PARTICIPANT87083-065 AND WEEKEND DIRECTORS WELL AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 7.38131 = 0.161403 [graph] + 7.21991 [acoustic] over 9060 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 32 lattices, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Jan 28 18:38:05 EST 2019, elapsed time 4 seconds

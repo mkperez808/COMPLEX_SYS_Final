@@ -1,0 +1,22 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/decode/lat.1.gz" 
+# Started at Mon Jan 28 18:57:18 EST 2019
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/exp/mono_ali_clinician/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/val/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.0.23~1-f7b2f]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 5 utterances, errors on 0
+PARTCIPANT75256-001 IT'S I ALMOST YOU YES 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT75256-001 is -8.30719 over 363 frames.
+PARTCIPANT75256-003 CLEANED 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT75256-003 is -8.24401 over 138 frames.
+PARTCIPANT75256-006 ALL IT'S 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT75256-006 is -8.18883 over 150 frames.
+PARTCIPANT75256-008 LITTLE FACILITY TO SO THE WAS OH UNDERSTANDING NICE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT75256-008 is -8.14043 over 483 frames.
+PARTCIPANT75256-010 LIKE FRIDAY 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTCIPANT75256-010 is -8.27694 over 103 frames.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:176) Time taken 6.20046s: real-time factor assuming 100 frames/sec is 0.50125
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:179) Done 5 utterances, failed for 0
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.21816 over 1237 frames.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Mon Jan 28 18:57:25 EST 2019, elapsed time 7 seconds

@@ -1,0 +1,143 @@
+# extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/mfcc/log/segments.1 ark:- | compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- | copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/mfcc/raw_mfcc_train.1.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/mfcc/raw_mfcc_train.1.scp 
+# Started at Mon Jan 28 10:41:48 EST 2019
+#
+extract-segments scp,p:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/wav.scp /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/mfcc/log/segments.1 ark:- 
+copy-feats --compress=true ark:- ark,scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/mfcc/raw_mfcc_train.1.ark,/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set16/train/mfcc/raw_mfcc_train.1.scp 
+compute-mfcc-feats --verbose=2 --config=/z/mkperez/PremanifestHD-classification/Scripts/kaldi/helper/mfcc.conf ark:- ark:- 
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT23789-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT23789-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT23789-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT23789-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT23789-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT23789-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT52080-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT52080-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT52080-006
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT75256-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT75256-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT75256-006
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT75256-008
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT75256-010
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-009
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-013
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-015
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-017
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-019
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTCIPANT82975-021
+sox WARN rate: rate clipped 165 samples; decrease volume?
+sox WARN dither: dither clipped 143 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-007
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-013
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-015
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-017
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-019
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-021
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-023
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-025
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-027
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-029
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-031
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-033
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-035
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-037
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-039
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-041
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-043
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-045
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-047
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-049
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-051
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-053
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-055
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-057
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-059
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-061
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-063
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-065
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-067
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT01634-069
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT14630-002
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT14630-004
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT20221-013
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-013
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT29758-015
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT46352-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT46352-003
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT46352-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT46352-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT46352-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-013
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-015
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-017
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-019
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-021
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-023
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-025
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-027
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT52053-029
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT59826-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT59826-003
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT59826-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-001
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-003
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-005
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-007
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-009
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-011
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-013
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-015
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-017
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:177) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-019
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-021
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-023
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-025
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-027
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-029
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-031
+LOG (extract-segments[5.0.23~1-f7b2f]:main():extract-segments.cc:194) Successfully processed 119 lines out of 119 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-033
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-035
+VLOG[2] (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:178) Processed features for key PARTICIPANT69573-037
+LOG (compute-mfcc-feats[5.0.23~1-f7b2f]:main():compute-mfcc-feats.cc:181)  Done 119 out of 119 utterances.
+LOG (copy-feats[5.0.23~1-f7b2f]:main():copy-feats.cc:120) Copied 119 feature matrices.
+# Accounting: time=63 threads=1
+# Ended (code 0) at Mon Jan 28 10:42:51 EST 2019, elapsed time 63 seconds

@@ -1,0 +1,1 @@
+71834 sox /z/mkperez/Speech-Data-Raw/HD-SS/71834.wav -t wav -r 8000 -c 1 - remix 2|

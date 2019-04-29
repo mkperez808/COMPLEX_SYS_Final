@@ -1,0 +1,7 @@
+# ali-to-phones --per-frame=true /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/../final.mdl "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/ali_tmp.1.gz|" ark,t:- | paste /dev/stdin <( gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/depth_tmp.1.gz ) | awk '{ half=NF/2; for (n=2; n<=half; n++) { m=n+half; count[$n " " $m]++;}} END{for(k in count) print k, count[k]; }' | gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/depth_stats_tmp.1.gz 
+# Started at Mon Jan 28 18:54:21 EST 2019
+#
+ali-to-phones --per-frame=true /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/../final.mdl 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/ali_tmp.1.gz|' ark,t:- 
+LOG (ali-to-phones[5.0.23~1-f7b2f]:main():ali-to-phones.cc:134) Done 20 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Jan 28 18:54:21 EST 2019, elapsed time 0 seconds

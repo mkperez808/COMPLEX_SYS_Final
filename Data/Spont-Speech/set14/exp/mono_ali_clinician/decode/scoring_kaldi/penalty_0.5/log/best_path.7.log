@@ -1,0 +1,26 @@
+# lattice-scale --inv-acoustic-scale=7 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.5/7.txt 
+# Started at Mon Jan 28 18:33:16 EST 2019
+#
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=7 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set14/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-001, best cost 44.1681 + 2432.29 = 2476.46 over 178 frames.
+PARTICIPANT91117-001 WHAT FRIENDS NICE FAMILY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-003, best cost 58.8753 + 3223.5 = 3282.37 over 238 frames.
+PARTICIPANT91117-003 I'VE REHEARSAL REHEARSAL HAVE OF 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-005, best cost 23.9029 + 1382.06 = 1405.96 over 101 frames.
+PARTICIPANT91117-005 FUN HERE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-007, best cost 10.7361 + 418.249 = 428.985 over 32 frames.
+PARTICIPANT91117-007 YEAH 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-009, best cost 24.4939 + 1154.01 = 1178.5 over 89 frames.
+PARTICIPANT91117-009 WHEN READ 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-011, best cost 4.53027 + 272.554 = 277.085 over 18 frames.
+PARTICIPANT91117-011 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 7 lattices.
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 7 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT91117-013, best cost 38.6866 + 2431.84 = 2470.52 over 173 frames.
+PARTICIPANT91117-013 GET NEXT CREDIT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 13.8961 = 0.24776 [graph] + 13.6484 [acoustic] over 829 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 7 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Jan 28 18:33:17 EST 2019, elapsed time 1 seconds

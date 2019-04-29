@@ -1,0 +1,82 @@
+# lattice-scale --inv-acoustic-scale=15 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.5/15.txt 
+# Started at Mon Jan 28 18:31:53 EST 2019
+#
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=15 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set13/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-001, best cost 22.9791 + 1069.29 = 1092.27 over 168 frames.
+PARTICIPANT01634-001 AND BUT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-003, best cost 107.62 + 5888.01 = 5995.63 over 988 frames.
+PARTICIPANT01634-003 DEPRESSED YOU AGAIN WAS SARASOTA STARTLE THE REALLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-005, best cost 56.8708 + 1841.23 = 1898.1 over 308 frames.
+PARTICIPANT01634-005 AGAIN ALSO AND SCHOOL HOUSE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-007, best cost 40.3177 + 1778.74 = 1819.06 over 288 frames.
+PARTICIPANT01634-007 GORDON ANTIDEPRESSANTS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-009, best cost 13.7082 + 568.648 = 582.357 over 98 frames.
+PARTICIPANT01634-009 AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-011, best cost 16.9426 + 774.369 = 791.312 over 118 frames.
+PARTICIPANT01634-011 ONLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-013, best cost 15.8331 + 595.707 = 611.54 over 88 frames.
+PARTICIPANT01634-013 DELTA 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-015, best cost 26.2281 + 870.316 = 896.544 over 138 frames.
+PARTICIPANT01634-015 GUYS LET'S 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-017, best cost 9.31719 + 108.343 = 117.66 over 18 frames.
+PARTICIPANT01634-017 YEAH 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-019, best cost 139.97 + 6394.51 = 6534.48 over 1048 frames.
+PARTICIPANT01634-019 RIDICULOUS AND INTRODUCTIONS ALMOST WENT ANY AND SO THAT WAS HERE OH 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-021, best cost 105.079 + 5072.82 = 5177.9 over 838 frames.
+PARTICIPANT01634-021 SO REMEMBER DELTA THAT YEAH YOU IT ANTIDEPRESSANTS LANDLORDS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-023, best cost 156.047 + 8003.24 = 8159.29 over 1325 frames.
+PARTICIPANT01634-023 NO SO INTRODUCTIONS WEEKENDS WEEKEND LOT INTRODUCTIONS ASSESSMENTS ALCOHOL LITTLE FOR START 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-025, best cost 130.653 + 6228.51 = 6359.16 over 1018 frames.
+PARTICIPANT01634-025 SOME EXCELLENT TO DEFINITELY LIKE RIDICULOUS EXCELLENT INAUDIBLE OKAY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-027, best cost 127.569 + 5931.47 = 6059.04 over 988 frames.
+PARTICIPANT01634-027 ON EXACTLY YES REALLY DEPRESSANTS SO TEST IS AND IMMEDIATELY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-029, best cost 150.676 + 6662.52 = 6813.2 over 1078 frames.
+PARTICIPANT01634-029 AND CANCELLED TONIGHT TOMORROW SO YOUR LITTLE NOT ANTIDEPRESSANTS DISABILITY DIRECTORS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-031, best cost 152.226 + 7752.08 = 7904.3 over 1278 frames.
+PARTICIPANT01634-031 EXCELLENT DAUGHTER DIAGNOSIS INTRODUCTIONS WHEN THAT DEFINITELY YOU MOBILITY THAT THE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-033, best cost 110.286 + 5727.3 = 5837.59 over 948 frames.
+PARTICIPANT01634-033 YEAH YOUR DISABILITY DISABILITY DIDN'T DISABILITY BE LIKE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-035, best cost 52.407 + 2607.04 = 2659.45 over 438 frames.
+PARTICIPANT01634-035 BUT RIDICULOUSLY OKAY YES 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-037, best cost 97.7246 + 4784.19 = 4881.92 over 808 frames.
+PARTICIPANT01634-037 DON'T LITTLE BETWEEN REHEARSAL MAYBE AND CURRENTLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-039, best cost 296.163 + 15686.8 = 15982.9 over 2496 frames.
+PARTICIPANT01634-039 ABSOLUTELY ARE WEEKEND THAT EXCELLENT ABSOLUTELY WELL ANTIDEPRESSANTS DELTA ONLY SOMEONE RIDICULOUSLY ABSOLUTELY TUESDAY ALMOST LIKE WEDDING WEEKEND EXACTLY SUCCESSFUL 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-041, best cost 67.0142 + 4664.6 = 4731.62 over 748 frames.
+PARTICIPANT01634-041 IT'S EXACTLY BECAUSE THE DELTA 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-043, best cost 16.7929 + 622.183 = 638.976 over 98 frames.
+PARTICIPANT01634-043 I THE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-045, best cost 10.7751 + 336.241 = 347.016 over 58 frames.
+PARTICIPANT01634-045 AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-047, best cost 18.4294 + 540.319 = 558.749 over 86 frames.
+PARTICIPANT01634-047 INTERESTING 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-049, best cost 12.3975 + 500.256 = 512.654 over 81 frames.
+PARTICIPANT01634-049 TO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-051, best cost 13.7123 + 484.632 = 498.345 over 78 frames.
+PARTICIPANT01634-051 AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-053, best cost 4.35524 + 279.673 = 284.028 over 48 frames.
+PARTICIPANT01634-053 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-055, best cost 210.802 + 10948.1 = 11158.9 over 1788 frames.
+PARTICIPANT01634-055 YOU EXCELLENT DELTA ACTUALLY FLORIDA YOU EXACTLY TO LOT LOT WELL REALLY LOT INTRODUCTIONS DEFINITELY RIDICULOUSLY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-057, best cost 164.886 + 8364.51 = 8529.4 over 1398 frames.
+PARTICIPANT01634-057 AND AND ON WEEKEND SO CLASSES IS TONIGHT COMMITTED CLOSED THAT LAUDERDALE'S UNDERGRAD 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-059, best cost 9.63403 + 163.535 = 173.169 over 28 frames.
+PARTICIPANT01634-059 TO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-061, best cost 12.3555 + 389.35 = 401.705 over 68 frames.
+PARTICIPANT01634-061 AND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-063, best cost 11.2413 + 179.983 = 191.224 over 28 frames.
+PARTICIPANT01634-063 YES 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-065, best cost 25.1055 + 1277.94 = 1303.05 over 198 frames.
+PARTICIPANT01634-065 INSTRUMENTS 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-067, best cost 39.0303 + 1740.03 = 1779.06 over 288 frames.
+PARTICIPANT01634-067 CAN TEN WEEKEND 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 35 lattices.
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 35 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT01634-069, best cost 199.983 + 8286.09 = 8486.07 over 1328 frames.
+PARTICIPANT01634-069 TRACK TREATMENT I BASELINE WE EXACTLY LANDLORDS CHILDREN YOU DIRECTORS HOUSE LITTLE ASSESSMENTS GREAT DEFINITELY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 6.24003 = 0.127194 [graph] + 6.11283 [acoustic] over 20796 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 35 lattices, failed for 0
+# Accounting: time=5 threads=1
+# Ended (code 0) at Mon Jan 28 18:31:58 EST 2019, elapsed time 5 seconds

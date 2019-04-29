@@ -1,0 +1,18 @@
+# lattice-scale --inv-acoustic-scale=10 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set10/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set10/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set10/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set10/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/10.txt 
+# Started at Mon Jan 28 18:16:43 EST 2019
+#
+lattice-scale --inv-acoustic-scale=10 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set10/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set10/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 3 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTCIPANT52080-001, best cost 13.0698 + 709.581 = 722.651 over 78 frames.
+PARTCIPANT52080-001 KNOW 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 3 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTCIPANT52080-003, best cost 51.9609 + 2930.07 = 2982.03 over 318 frames.
+PARTCIPANT52080-003 THINK PEOPLE YEAH IN SORRY 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTCIPANT52080-006, best cost 10.5546 + 464.447 = 475.001 over 48 frames.
+PARTCIPANT52080-006 THE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 9.41369 = 0.170237 [graph] + 9.24345 [acoustic] over 444 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 3 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Jan 28 18:16:44 EST 2019, elapsed time 1 seconds

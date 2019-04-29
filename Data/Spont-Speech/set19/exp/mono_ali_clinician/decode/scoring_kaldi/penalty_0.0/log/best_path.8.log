@@ -1,0 +1,34 @@
+# lattice-scale --inv-acoustic-scale=8 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/8.txt 
+# Started at Mon Jan 28 18:47:14 EST 2019
+#
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=8 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set19/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-001, best cost 281.163 + 21524.4 = 21805.5 over 1878 frames.
+PARTICIPANT71834-001 FOR PRETTY AND REASON DON'T LIKE FOR THE WHERE WAS WE IT THEY KNOW FOR THAT'S LATER SO THAT AND WE DEFINITELY CROPPING I BECAUSE I WORK WE WHEN 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-003, best cost 150.395 + 9306.57 = 9456.96 over 778 frames.
+PARTICIPANT71834-003 AND WE MONEY ANYWAY BACK WEEKEND TO TO SO SO OF WERE SO OF WE THINK WHATEVER SO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-004, best cost 298.548 + 19242.6 = 19541.2 over 1628 frames.
+PARTICIPANT71834-004 WE'LL WEEKEND YEAH TO OKAY GONNA GOING INTRODUCTIONS WE'RE IT'S THAT REASON WHAT I UP BEFORE LITTLE WHAT GET IT'S CAUSE SEE IS GETTING BEING WORK I DID I RECORDING THAT 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-006, best cost 18.7314 + 829.143 = 847.874 over 68 frames.
+PARTICIPANT71834-006 BUT WEEKEND 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-008, best cost 27.4451 + 1720.63 = 1748.08 over 148 frames.
+PARTICIPANT71834-008 SOMEONE FOR 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-010, best cost 18.1089 + 1118.83 = 1136.94 over 98 frames.
+PARTICIPANT71834-010 ON THAT'S 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-012, best cost 75.2229 + 4942.71 = 5017.94 over 398 frames.
+PARTICIPANT71834-012 YEAH THE OUT SIGNIFICANT QUESTIONS WAS STUFF 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 11 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-014, best cost 22.425 + 1048.82 = 1071.24 over 88 frames.
+PARTICIPANT71834-014 ARE CAUSES 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-016, best cost 19.9432 + 1296.13 = 1316.07 over 108 frames.
+PARTICIPANT71834-016 AS SO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-018, best cost 16.6574 + 751.263 = 767.92 over 58 frames.
+PARTICIPANT71834-018 TO THAT 
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 11 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT71834-020, best cost 21.3887 + 1418.1 = 1439.48 over 118 frames.
+PARTICIPANT71834-020 ALSO SO 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 11.9503 = 0.17698 [graph] + 11.7733 [acoustic] over 5368 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 11 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Jan 28 18:47:16 EST 2019, elapsed time 2 seconds

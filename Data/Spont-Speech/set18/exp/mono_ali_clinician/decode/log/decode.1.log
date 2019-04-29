@@ -1,0 +1,156 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/decode/lat.1.gz" 
+# Started at Mon Jan 28 18:40:32 EST 2019
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/val/split1/1/feats.scp ark:- 
+PARTICPANT84596-001 YEAH UNDERSTANDING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-001 is -8.16133 over 178 frames.
+PARTICPANT84596-003 WHAT 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-003 is -7.78148 over 58 frames.
+PARTICPANT84596-005 INTRODUCTIONS 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (35832224,219296,14034816), after rebuilding, repo size was 26648352, effective beam was 4.86556 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-005
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-005 is -8.31852 over 148 frames.
+PARTICPANT84596-007 IT TO 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-007 is -7.66359 over 68 frames.
+PARTICPANT84596-009 LITTLE YEAH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-009 is -7.62936 over 128 frames.
+PARTICPANT84596-011 OR 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-011 is -7.81205 over 68 frames.
+PARTICPANT84596-013 ALL METAL IN 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-013 is -7.80936 over 278 frames.
+PARTICPANT84596-015 I THE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-015 is -8.11252 over 38 frames.
+PARTICPANT84596-017 THE ARE IT'S TO YEAH WEEKEND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-017 is -7.66388 over 348 frames.
+PARTICPANT84596-019 WHAT AND ORLANDO WELL THE THAT LANDLORD THAT WANT USE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (34699616,410400,14896128), after rebuilding, repo size was 27113088, effective beam was 5.24736 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-019
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-019 is -7.99985 over 648 frames.
+PARTICPANT84596-021 GET AND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-021 is -8.35184 over 108 frames.
+PARTICPANT84596-023 AND REALLY WANTED YEAH STARTED ALCOHOL INTRODUCTIONS THAT'S YEAH GRAHAM LOAN AND ON TO I 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (36816736,278240,12940392), after rebuilding, repo size was 31711648, effective beam was 3.32067 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-023
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-023 is -7.79133 over 1058 frames.
+PARTICPANT84596-025 EMPTIED 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-025 is -7.78495 over 110 frames.
+PARTICPANT84596-027 MILES IN 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-027 is -8.29095 over 108 frames.
+PARTICPANT84596-030 I ARE SO DNA 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-030 is -7.94478 over 288 frames.
+PARTICPANT84596-032 YEAH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-032 is -7.52874 over 88 frames.
+PARTICPANT84596-034 WHERE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-034 is -8.31261 over 48 frames.
+PARTICPANT84596-036 WAY PERSON 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-036 is -8.18117 over 204 frames.
+PARTICPANT84596-038 WEEKEND MAINTENANCE TALKING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-038 is -7.87483 over 298 frames.
+PARTICPANT84596-040 OH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-040 is -7.63037 over 18 frames.
+PARTICPANT84596-042 AND FACILITY ON PRETTY THAT'S 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-042 is -7.6516 over 318 frames.
+PARTICPANT84596-044 THE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-044 is -7.80034 over 88 frames.
+PARTICPANT84596-046 AND A 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-046 is -7.75813 over 68 frames.
+PARTICPANT84596-048 THIS A 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-048 is -7.89085 over 64 frames.
+PARTICPANT84596-050 FLORIDA COURSE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-050 is -7.89186 over 148 frames.
+PARTICPANT84596-052 A IN YEAH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-052 is -7.87688 over 128 frames.
+PARTICPANT84596-054 DISABILITY BECAUSE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-054 is -7.88505 over 168 frames.
+PARTICPANT84596-056 AND ARE BE REALIZED YEAH ELEMENTARY SATURDAY 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (33875616,357248,15773496), after rebuilding, repo size was 27768032, effective beam was 5.22892 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-056
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-056 is -7.79462 over 718 frames.
+PARTICPANT84596-058 BETWEEN GETTING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-058 is -8.03549 over 138 frames.
+PARTICPANT84596-060 SO OKAY 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-060 is -7.4162 over 148 frames.
+PARTICPANT84596-062 IT INTRODUCTIONS TO AND YOU WHERE IS OKAY ANTIDEPRESSANTS DATA 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-062 is -8.06178 over 808 frames.
+PARTICPANT84596-065 IN 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-065 is -7.41317 over 78 frames.
+PARTICPANT84596-066 AND STUDY 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-066 is -7.47794 over 168 frames.
+PARTICPANT84596-068 IT'S ERUPTED 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-068 is -7.99796 over 138 frames.
+PARTICPANT84596-070 TO 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-070 is -8.18757 over 78 frames.
+PARTICPANT84596-072 I IDEA 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-072 is -7.83769 over 128 frames.
+LOG (apply-cmvn[5.0.23~1-f7b2f]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 46 utterances, errors on 0
+PARTICPANT84596-074 THEN AND WEEKEND YEAH I THAT YOU BETWEEN BETWEEN WEEKEND AND ON AND I IN THEN YEAH ADRIAN BE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (38412512,194368,11408664), after rebuilding, repo size was 32907904, effective beam was 2.57634 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DeterminizeLatticePruned():determinize-lattice-pruned.cc:1281) Effective beam 2.57634 was less than beam 6 * cutoff 0.5, pruning raw lattice with new beam 3.93167 and retrying.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (47402912,429408,2171592), after rebuilding, repo size was 45449952, effective beam was 5.84527 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-074
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-074 is -7.55119 over 1538 frames.
+PARTICPANT84596-075 TO 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-075 is -8.02918 over 48 frames.
+PARTICPANT84596-079 YES 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-079 is -8.16917 over 78 frames.
+PARTICPANT84596-081 IN DOLLARS AND YEAH YEAH IDEA WEEKEND LITTLE TRIPS I THAT YEAH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (36514208,246848,13314456), after rebuilding, repo size was 28025792, effective beam was 4.08278 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-081
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-081 is -7.76398 over 798 frames.
+PARTICPANT84596-083 IT WEEKEND BETWEEN 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (34159008,431520,15411768), after rebuilding, repo size was 26057504, effective beam was 5.62429 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-083
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-083 is -8.14634 over 188 frames.
+PARTICPANT84596-085 YEAH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-085 is -7.37027 over 58 frames.
+PARTICPANT84596-087 ON EXCITED 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-087 is -8.08446 over 108 frames.
+PARTICPANT84596-090 ISH YEAH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-090 is -8.04948 over 128 frames.
+PARTICPANT84596-092 IT THAT AND NICE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (35571872,230880,14321280), after rebuilding, repo size was 26835456, effective beam was 5.07515 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICPANT84596-092
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-092 is -7.8895 over 373 frames.
+PARTICPANT84596-095 YET 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICPANT84596-095 is -8.03276 over 48 frames.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:176) Time taken 254.379s: real-time factor assuming 100 frames/sec is 2.30478
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:179) Done 46 utterances, failed for 0
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -7.83427 over 11037 frames.
+# Accounting: time=255 threads=1
+# Ended (code 0) at Mon Jan 28 18:44:47 EST 2019, elapsed time 255 seconds

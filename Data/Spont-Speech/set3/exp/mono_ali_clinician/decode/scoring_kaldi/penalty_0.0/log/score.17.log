@@ -1,0 +1,5 @@
+# cat /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/17.txt | compute-wer --text --mode=present ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/decode/scoring_kaldi/test_filt.txt ark,p:- >& /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set3/exp/mono_ali_clinician/decode/wer_17_0.0 
+# Started at Mon Jan 28 18:50:05 EST 2019
+#
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Jan 28 18:50:05 EST 2019, elapsed time 0 seconds

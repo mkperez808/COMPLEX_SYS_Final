@@ -1,0 +1,20 @@
+# lattice-scale --inv-acoustic-scale=8 "ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/exp/mono_ali_clinician/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/exp/mono_ali_clinician/graph/words.txt | local/wer_hyp_filter > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/8.txt 
+# Started at Mon Jan 28 18:48:46 EST 2019
+#
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/exp/mono_ali_clinician/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=8 'ark:gunzip -c /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set2/exp/mono_ali_clinician/decode/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78971-001, best cost 12.6154 + 881.702 = 894.318 over 78 frames.
+PARTICIPANT78971-001 KNOW 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78971-003, best cost 49.5638 + 3044.5 = 3094.06 over 258 frames.
+PARTICIPANT78971-003 ACTUALLY AND WE UPCOMING WHERE 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78971-005, best cost 30.4759 + 1318.44 = 1348.92 over 108 frames.
+PARTICIPANT78971-005 I'M WELL WORKS 
+LOG (lattice-scale[5.0.23~1-f7b2f]:main():lattice-scale.cc:90) Done 4 lattices.
+LOG (lattice-add-penalty[5.0.23~1-f7b2f]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 4 lattices.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:99) For utterance PARTICIPANT78971-007, best cost 34.3825 + 3010.58 = 3044.97 over 258 frames.
+PARTICIPANT78971-007 WELL AND MARRIED 
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:124) Overall cost per frame is 11.9406 = 0.180965 [graph] + 11.7596 [acoustic] over 702 frames.
+LOG (lattice-best-path[5.0.23~1-f7b2f]:main():lattice-best-path.cc:128) Done 4 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Jan 28 18:48:47 EST 2019, elapsed time 1 seconds

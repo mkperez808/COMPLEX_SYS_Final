@@ -1,0 +1,65 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/lat.1.gz" 
+# Started at Mon Jan 28 18:52:59 EST 2019
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/graph/words.txt /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/final.mdl /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/exp/mono_ali_clinician/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/utt2spk scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/cmvn.scp scp:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set5/val/split1/1/feats.scp ark:- 
+PARTICIPANT69573-001 I'M LIONS I IN LAST FORMULA IT WAIT QUARTER LIKE THERE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-001 is -7.53156 over 728 frames.
+PARTICIPANT69573-003 WEEKEND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-003 is -8.06845 over 93 frames.
+PARTICIPANT69573-005 WAS REALLY QUICKEN WELL FOR A 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-005 is -8.13109 over 261 frames.
+PARTICIPANT69573-007 THAT YES WE GOING WEEKEND WELL WEDDING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-007 is -7.65185 over 389 frames.
+PARTICIPANT69573-009 ONLY IT'S AND TRYING 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-009 is -7.83613 over 318 frames.
+PARTICIPANT69573-011 KNOW WEEKEND TO 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-011 is -7.94248 over 98 frames.
+PARTICIPANT69573-013 LITTLE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-013 is -7.46519 over 138 frames.
+PARTICIPANT69573-015 WEEKEND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-015 is -7.2343 over 168 frames.
+PARTICIPANT69573-017 MY ALWAYS WELL WE'LL THE LITTLE FOR I'M FLORIDA 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-017 is -7.86613 over 598 frames.
+PARTICIPANT69573-019 HISTORY 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-019 is -7.63177 over 98 frames.
+PARTICIPANT69573-021 TO 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-021 is -7.67662 over 53 frames.
+LOG (apply-cmvn[5.0.23~1-f7b2f]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 20 utterances, errors on 0
+PARTICIPANT69573-023 IT KNOW WAS READ SO LOCAL SOMETHING MARRIED ELEMENTARY TO AND AND LATER AND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-023 is -7.52323 over 1098 frames.
+PARTICIPANT69573-025 OH 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-025 is -7.34366 over 68 frames.
+PARTICIPANT69573-027 YES AND IT 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (34306624,380672,15329280), after rebuilding, repo size was 26764576, effective beam was 5.8906 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICIPANT69573-027
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-027 is -7.92119 over 175 frames.
+PARTICIPANT69573-029 A I ASSESSMENTS 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-029 is -7.26982 over 334 frames.
+PARTICIPANT69573-031 WELL I OH LAST I WEEKEND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (45920768,431744,3707448), after rebuilding, repo size was 41500256, effective beam was 5.11325 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:273) Determinization finished earlier than the beam for utterance PARTICIPANT69573-031
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-031 is -7.35932 over 584 frames.
+PARTICIPANT69573-033 SUMMER SEEN 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-033 is -7.75127 over 124 frames.
+PARTICIPANT69573-035 EXCELLENT 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-035 is -7.7762 over 118 frames.
+PARTICIPANT69573-037 AND TREATMENT AND 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-037 is -7.84617 over 195 frames.
+PARTICIPANT69573-039 INTRODUCTIONS LIKE 
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance PARTICIPANT69573-039 is -8.02151 over 204 frames.
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:176) Time taken 80.8295s: real-time factor assuming 100 frames/sec is 1.38359
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:179) Done 20 utterances, failed for 0
+LOG (gmm-latgen-faster[5.0.23~1-f7b2f]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -7.63845 over 5842 frames.
+# Accounting: time=81 threads=1
+# Ended (code 0) at Mon Jan 28 18:54:20 EST 2019, elapsed time 81 seconds

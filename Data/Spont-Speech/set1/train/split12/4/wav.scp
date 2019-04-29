@@ -1,0 +1,2 @@
+14630 sox /z/mkperez/Speech-Data-Raw/HD-SS/14630.wav -t wav -r 8000 -c 1 - remix 2|
+29758 sox /z/mkperez/Speech-Data-Raw/HD-SS/29758.wav -t wav -r 8000 -c 1 - remix 2|
