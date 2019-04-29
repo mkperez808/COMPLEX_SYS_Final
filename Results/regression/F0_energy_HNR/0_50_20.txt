@@ -1,0 +1,23 @@
+regression: 8.79946194444 (0.46647814085)
+baseline: 9.82955102041 (0.329749602729)
+Feature Importance
+F0_sma_stddev = 0.186110354373
+F0_sma_duration = 0.132709008579
+pcm_intensity_sma_max = 0.120646606941
+F0_sma_linregc1 = 0.098715785044
+F0_sma_linregerrA = 0.0483963608361
+HNR_sma_linregc1 = 0.04798508472
+F0_sma_max = 0.0459999832926
+pcm_intensity_sma_amean = 0.0445470085324
+pcm_intensity_sma_stddev = 0.0404226944184
+HNR_sma_min = 0.0324166929495
+NUV = 0.0321477629867
+UV-V-portion = 0.0321460844058
+HNR_sma_linregerrA = 0.0308097021489
+HNR_sma_amean = 0.0298875707008
+HNR_sma_stddev = 0.0274540635909
+F0_sma_amean = 0.0271485183512
+pcm_intensity_sma_linregerrA = 0.019787147683
+HNR_sma_max = 0.00266957044712
+pcm_intensity_sma_linregc1 = 0.0
+pcm_intensity_sma_min = 0.0

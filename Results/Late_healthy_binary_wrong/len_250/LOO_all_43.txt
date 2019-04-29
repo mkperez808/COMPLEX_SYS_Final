@@ -1,0 +1,50 @@
+
+Confusion Matrix
+[[533   7]
+ [322 218]]
+
+UAR: 0.844907729293 (0.0243034595622). acc_list [0.8504458977407848, 0.8579693486590039, 0.8117610837438425, 0.8457088122605364, 0.8430008210180624, 0.8740091161315895, 0.8204501915708812, 0.8823275862068966, 0.8051668877099912, 0.8582375478927203]
+Feature Importance
+F0_sma_amean = 0.0388913551216
+F0_sma_linregerrA = 0.0385118311232
+F0_sma_stddev = 0.0371894610287
+speakingRate_sma_linregerrA = 0.0370511687414
+F0_sma_range = 0.0330419414525
+pcm_intensity_sma_range = 0.0314447567866
+speakingRate_sma_stddev = 0.0273525624442
+HNR_sma_range = 0.0271101220328
+speakingRate_sma_linregc1 = 0.0253174520286
+pause_portion = 0.0251270560914
+vcd_portion = 0.0248964084243
+HNR_sma_linregc1 = 0.0246579071671
+HNR_sma_stddev = 0.0245689333407
+voiceProb_sma_amean = 0.0241321612704
+voiceProb_sma_linregerrA = 0.0241073431558
+voiceProb_sma_range = 0.0231557930867
+voiceProb_sma_linregc1 = 0.0230693784378
+HNR_sma_linregerrA = 0.0216573881187
+pause-vcd-switches = 0.0215141596179
+pcm_intensity_sma_stddev = 0.0211128179464
+F0_sma_linregc1 = 0.0206053995089
+voiceProb_sma_stddev = 0.0204007009872
+shimmerLocal_sma_linregc1 = 0.0194023678913
+speakingRate_sma_amean = 0.0189840089698
+HNR_sma_amean = 0.0185666691603
+jitterLocal_sma_range = 0.016320687653
+shimmerLocal_sma_range = 0.0159424578082
+speakingRate_sma_range = 0.015196918385
+shimmerLocal_sma_stddev = 0.0146733781985
+shimmerLocal_sma_amean = 0.0141962270732
+pcm_intensity_sma_linregerrA = 0.0140697257309
+jitterLocal_sma_stddev = 0.0131832136868
+jitterDDP_sma_linregc1 = 0.0130676673572
+jitterLocal_sma_linregerrA = 0.0123105428691
+shimmerLocal_sma_linregerrA = 0.0119356731469
+jitterLocal_sma_amean = 0.0119077469461
+jitterDDP_sma_stddev = 0.0119048681959
+jitterLocal_sma_linregc1 = 0.0115436508253
+jitterDDP_sma_range = 0.0111410314477
+pcm_intensity_sma_amean = 0.0106741602061
+jitterDDP_sma_amean = 0.00972315444126
+jitterDDP_sma_linregerrA = 0.0096355267427
+pcm_intensity_sma_linregc1 = 0.0

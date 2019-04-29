@@ -1,0 +1,15 @@
+Confusion Matrix
+[[145  35]
+ [ 58 122]]
+
+UAR: 0.741666666667 (0.0279163211698). acc_list [0.6944444444444444, 0.75, 0.7777777777777778, 0.7222222222222222, 0.75, 0.75, 0.6944444444444444, 0.75, 0.7777777777777778, 0.75]
+
+Feature Importance
+F0_sma_linregerrA = 0.244966828851
+F0_sma_stddev = 0.191254698482
+F0_sma_duration = 0.156004322135
+pcm_intensity_sma_stddev = 0.117340805077
+F0_sma_linregc1 = 0.103625190082
+F0_sma_nnz = 0.0989830848627
+pcm_intensity_sma_linregerrA = 0.0878250705096
+pcm_intensity_sma_linregc1 = 0.0

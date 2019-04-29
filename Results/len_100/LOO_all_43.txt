@@ -1,0 +1,50 @@
+Confusion Matrix
+[[614 286]
+ [547 353]]
+
+UAR: 0.45559792131 (0.0350723860082). acc_list [0.4629139957264957, 0.44851025281647294, 0.4759802473512151, 0.46822956283482603, 0.5090535290025952, 0.38752048390206284, 0.4650749363822369, 0.49048985347796903, 0.44458276098901095, 0.4036235906142527]
+
+Feature Importance
+F0_sma_linregerrA = 0.0701734677018
+F0_sma_amean = 0.0680192473441
+F0_sma_stddev = 0.0587388560897
+pcm_intensity_sma_range = 0.045938371744
+speakingRate_sma_linregerrA = 0.0453747327389
+voiceProb_sma_amean = 0.04481696416
+HNR_sma_range = 0.0436304549991
+pause_portion = 0.0426559824907
+vcd_portion = 0.0420652361215
+F0_sma_range = 0.0383892463578
+speakingRate_sma_stddev = 0.0331350001378
+speakingRate_sma_amean = 0.0327656825168
+voiceProb_sma_stddev = 0.0315764055039
+voiceProb_sma_range = 0.0310248891471
+HNR_sma_amean = 0.0306993559892
+voiceProb_sma_linregerrA = 0.0288833834457
+speakingRate_sma_linregc1 = 0.0278284233503
+voiceProb_sma_linregc1 = 0.0272230534851
+HNR_sma_linregc1 = 0.02600095613
+HNR_sma_stddev = 0.0256964653961
+HNR_sma_linregerrA = 0.0244200636216
+F0_sma_linregc1 = 0.0231158254546
+pcm_intensity_sma_stddev = 0.0214286897818
+pause-vcd-switches = 0.0169642455173
+pcm_intensity_sma_linregerrA = 0.0150093914119
+pcm_intensity_sma_amean = 0.0148473340056
+speakingRate_sma_range = 0.0139762794678
+shimmerLocal_sma_linregc1 = 0.00975810224872
+shimmerLocal_sma_amean = 0.00950167107656
+shimmerLocal_sma_range = 0.0085646937507
+shimmerLocal_sma_linregerrA = 0.00793472072076
+shimmerLocal_sma_stddev = 0.00780127875753
+jitterLocal_sma_amean = 0.00479239683843
+jitterLocal_sma_range = 0.00464393615048
+jitterLocal_sma_stddev = 0.00458315515684
+jitterLocal_sma_linregerrA = 0.00377366781918
+jitterLocal_sma_linregc1 = 0.00309369552784
+jitterDDP_sma_amean = 0.00271333010343
+jitterDDP_sma_stddev = 0.00265582467216
+jitterDDP_sma_linregerrA = 0.00264883641567
+jitterDDP_sma_range = 0.00187758561436
+jitterDDP_sma_linregc1 = 0.00125910103724
+pcm_intensity_sma_linregc1 = 0.0

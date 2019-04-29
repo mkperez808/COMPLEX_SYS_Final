@@ -1,0 +1,78 @@
+Confusion Matrix
+[[140  40]
+ [ 62 118]]
+
+UAR: 0.716666666667 (0.0207869854821). acc_list [0.75, 0.7222222222222222, 0.6944444444444444, 0.6944444444444444, 0.75, 0.6944444444444444, 0.7222222222222222, 0.7222222222222222, 0.6944444444444444, 0.7222222222222222]
+
+Feature Importance
+voiceProb_sma_linregerrA = 0.0735526772205
+F0_sma_linregerrA = 0.0381554557973
+F0_sma_stddev = 0.0316302547041
+voiceProb_sma_stddev = 0.0296036568733
+voiceProb_sma_max = 0.0283148293099
+pcm_intensity_sma_max = 0.0271684720228
+HNR_sma_linregerrA = 0.0234461969136
+F0_sma_linregc1 = 0.0223954039466
+voiceProb_sma_linregc1 = 0.021882469605
+shimmerLocEnv_sma_linregc1 = 0.0208520945455
+shimmerLocEnv_sma_linregerrA = 0.0197873355752
+shimmerLocEnv_sma_nnz = 0.0186858605571
+F0_sma_nnz = 0.0185338897125
+NUV = 0.0182993333371
+jitterLocEnv_sma_nnz = 0.0182450059249
+pcm_intensity_sma_nnz = 0.0181030842483
+jitterDEnv_sma_nnz = 0.0180772546655
+voiceProb_sma_nnz = 0.0180439279465
+shimmerLocal_sma_nnz = 0.0179284483279
+jitterLocal_sma_nnz = 0.0176605132748
+HNR_sma_nnz = 0.0176440241276
+HNR_sma_stddev = 0.0175767649573
+jitterDDP_sma_nnz = 0.0175336526057
+F0_sma_duration = 0.0171079457757
+pcm_intensity_sma_stddev = 0.0170824011851
+HNR_sma_linregc1 = 0.016985400388
+shimmerLocal_sma_linregc1 = 0.0162179646985
+jitterDEnv_sma_min = 0.0153574144218
+shimmerLocal_sma_linregerrA = 0.0142342631273
+jitterDDP_sma_linregc1 = 0.0139711807948
+pcm_intensity_sma_linregerrA = 0.0129668995573
+jitterLocal_sma_max = 0.0128930211193
+shimmerLocEnv_sma_stddev = 0.0125522046207
+pcm_intensity_sma_amean = 0.0123790698397
+jitterDEnv_sma_linregc1 = 0.0122555944458
+jitterDDP_sma_amean = 0.0119896444576
+F0_sma_max = 0.0118251093222
+shimmerLocal_sma_max = 0.0116732063451
+voiceProb_sma_min = 0.0115089944901
+jitterDEnv_sma_amean = 0.0114282859944
+HNR_sma_min = 0.011128654395
+F0_sma_amean = 0.0110431808933
+jitterLocal_sma_linregerrA = 0.010976209392
+jitterDDP_sma_linregerrA = 0.0105811708873
+jitterDEnv_sma_linregerrA = 0.0101247218813
+shimmerLocEnv_sma_max = 0.00961143940762
+jitterDDP_sma_max = 0.00955574027891
+jitterLocEnv_sma_stddev = 0.00952116419813
+voiceProb_sma_amean = 0.00913239089191
+HNR_sma_amean = 0.00910435122564
+jitterLocal_sma_amean = 0.00903829328517
+jitterLocal_sma_linregc1 = 0.00890333494636
+jitterDDP_sma_stddev = 0.0087765951924
+shimmerLocEnv_sma_amean = 0.00854028795518
+shimmerLocal_sma_stddev = 0.00851983738107
+jitterDEnv_sma_stddev = 0.00809830803532
+jitterLocal_sma_stddev = 0.00795123499661
+jitterLocEnv_sma_linregc1 = 0.00722151913638
+jitterLocEnv_sma_linregerrA = 0.00702981018195
+jitterLocEnv_sma_amean = 0.00691975080395
+shimmerLocEnv_sma_min = 0.00659566869937
+shimmerLocal_sma_amean = 0.00636845355107
+jitterLocEnv_sma_max = 0.0054277361374
+jitterDDP_sma_min = 0.00540092294468
+jitterDEnv_sma_max = 0.00493205705168
+HNR_sma_max = 0.00363609028534
+shimmerLocal_sma_min = 0.000290733195397
+jitterLocEnv_sma_min = 2.11359867557e-05
+pcm_intensity_sma_linregc1 = 0.0
+frameTime = 0.0
+pcm_intensity_sma_min = 0.0

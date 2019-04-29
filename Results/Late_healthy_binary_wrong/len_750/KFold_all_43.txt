@@ -1,0 +1,50 @@
+
+Confusion Matrix
+[[84 46]
+ [36 94]]
+
+UAR: 0.695 (0.0739932429347). acc_list [0.725, 0.7, 0.525, 0.75, 0.625, 0.75, 0.75, 0.75, 0.625, 0.75]
+Feature Importance
+speakingRate_sma_linregerrA = 0.0563887481576
+F0_sma_stddev = 0.0532007125606
+jitterLocal_sma_amean = 0.0467124742306
+jitterLocal_sma_range = 0.0426171148977
+F0_sma_amean = 0.0399803661783
+voiceProb_sma_range = 0.0381810203264
+F0_sma_linregerrA = 0.0350669833692
+speakingRate_sma_range = 0.0346713219704
+jitterDDP_sma_stddev = 0.0329031056338
+shimmerLocal_sma_amean = 0.0320009081936
+F0_sma_range = 0.0301473679297
+shimmerLocal_sma_linregc1 = 0.0287290636122
+HNR_sma_stddev = 0.0285203248361
+speakingRate_sma_amean = 0.0283753092822
+voiceProb_sma_linregerrA = 0.0261433338154
+voiceProb_sma_stddev = 0.0257101140051
+jitterDDP_sma_linregerrA = 0.0248379877717
+voiceProb_sma_linregc1 = 0.0243518440293
+speakingRate_sma_stddev = 0.0227488268892
+F0_sma_linregc1 = 0.0223295091382
+jitterLocal_sma_stddev = 0.0218348262025
+HNR_sma_linregerrA = 0.0214496396742
+jitterLocal_sma_linregerrA = 0.0192491895996
+HNR_sma_amean = 0.0176843376993
+HNR_sma_range = 0.01765313532
+HNR_sma_linregc1 = 0.0172776873062
+shimmerLocal_sma_range = 0.0170107015357
+voiceProb_sma_amean = 0.016925067576
+pause_portion = 0.0149678511617
+shimmerLocal_sma_stddev = 0.0149642623791
+vcd_portion = 0.0143513270911
+jitterDDP_sma_amean = 0.0139582014427
+pcm_intensity_sma_stddev = 0.0136993224176
+pause-vcd-switches = 0.0134152321939
+shimmerLocal_sma_linregerrA = 0.0132500183365
+pcm_intensity_sma_linregerrA = 0.0127916467376
+pcm_intensity_sma_amean = 0.0126893726098
+pcm_intensity_sma_range = 0.0125330457919
+speakingRate_sma_linregc1 = 0.0116930382756
+jitterDDP_sma_linregc1 = 0.0112683636002
+jitterLocal_sma_linregc1 = 0.00984318528149
+jitterDDP_sma_range = 0.00787411094011
+pcm_intensity_sma_linregc1 = 0.0

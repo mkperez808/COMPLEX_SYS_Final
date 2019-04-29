@@ -1,0 +1,56 @@
+Confusion Matrix
+[[133  47]
+ [ 55 125]]
+
+UAR: 0.716666666667 (0.0408248290464). acc_list [0.6666666666666666, 0.7222222222222222, 0.6666666666666666, 0.7777777777777778, 0.7777777777777778, 0.7222222222222222, 0.6944444444444444, 0.75, 0.7222222222222222, 0.6666666666666666]
+
+Feature Importance
+voiceProb_sma_linregerrA = 0.0985289738749
+voiceProb_sma_max = 0.0438378718073
+voiceProb_sma_stddev = 0.0427495275836
+F0_sma_linregerrA = 0.0411545293793
+pcm_intensity_sma_max = 0.0342622915073
+HNR_sma_linregerrA = 0.0341627164038
+F0_sma_duration = 0.034112161805
+F0_sma_stddev = 0.0332277464441
+voiceProb_sma_linregc1 = 0.0299302547871
+HNR_sma_linregc1 = 0.0250552191771
+HNR_sma_stddev = 0.0243584058622
+jitterDEnv_sma_min = 0.0237357420048
+shimmerLocal_sma_linregerrA = 0.0230207329281
+F0_sma_linregc1 = 0.0229818279748
+pcm_intensity_sma_stddev = 0.0229637887044
+shimmerLocal_sma_linregc1 = 0.0228404613324
+jitterLocal_sma_max = 0.0214285391135
+jitterDDP_sma_linregc1 = 0.0213534074355
+F0_sma_amean = 0.0187559629703
+jitterDEnv_sma_linregc1 = 0.0186850908303
+shimmerLocal_sma_max = 0.0186261666705
+F0_sma_max = 0.0179440024603
+jitterLocal_sma_linregerrA = 0.0177132456745
+jitterDDP_sma_amean = 0.0171625126277
+pcm_intensity_sma_linregerrA = 0.0171473059563
+jitterDEnv_sma_amean = 0.0168918987308
+jitterDDP_sma_linregerrA = 0.0166832934962
+pcm_intensity_sma_amean = 0.016594063017
+jitterDEnv_sma_linregerrA = 0.0164090063367
+voiceProb_sma_min = 0.0163318241364
+jitterDDP_sma_max = 0.0156008729124
+jitterDDP_sma_stddev = 0.0152338859553
+HNR_sma_min = 0.0152201106975
+NUV = 0.0143690260324
+voiceProb_sma_amean = 0.0142599100112
+HNR_sma_amean = 0.014107929597
+jitterLocal_sma_stddev = 0.0140857601846
+shimmerLocal_sma_stddev = 0.0137377914365
+jitterDEnv_sma_stddev = 0.0132437237487
+jitterLocal_sma_amean = 0.0132188486853
+jitterLocal_sma_linregc1 = 0.0130044709055
+jitterDDP_sma_min = 0.00974298275194
+shimmerLocal_sma_amean = 0.0092083912945
+jitterDEnv_sma_max = 0.00697446244225
+HNR_sma_max = 0.00504307786156
+F0_sma_min = 0.00376023075182
+shimmerLocal_sma_min = 0.000539953699278
+pcm_intensity_sma_linregc1 = 0.0
+pcm_intensity_sma_min = 0.0

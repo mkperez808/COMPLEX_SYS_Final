@@ -1,0 +1,10 @@
+
+Confusion Matrix
+[[80 50]
+ [60 70]]
+
+UAR: 0.6 (1.11022302463e-16). acc_list [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6]
+Feature Importance
+pause_portion = 0.350837171473
+vcd_portion = 0.347968475067
+pause-vcd-switches = 0.30119435346
