@@ -1,6 +1,0 @@
-# ngram-count -vocab /tmp/build_lm.1552680644/vocab -text /z/mkperez/SpontSpeech-HD/Data/Spont-Speech/set0/train/LM_text -order 2 -write /z/mkperez/SpontSpeech-HD/Data/Spont-Speech/set0/lang/G.count -lm /z/mkperez/SpontSpeech-HD/Data/Spont-Speech/set0/lang/G.arpa -unk -sort 
-# Started at Fri Mar 15 16:10:44 EDT 2019
-#
-warning: discount coeff 1 is out of range: 0
-# Accounting: time=0 threads=1
-# Ended (code 0) at Fri Mar 15 16:10:44 EDT 2019, elapsed time 0 seconds

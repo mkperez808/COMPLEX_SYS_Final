@@ -1,1 +1,0 @@
-52053 sox /z/mkperez/Speech-Data-Raw/HD-SS/52053.wav -t wav -r 8000 -c 1 - remix 2|

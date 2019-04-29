@@ -1,4 +1,0 @@
-compute-wer --text --mode=present ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set18/exp/mono_ali_clinician/decode/scoring_kaldi/test_filt.txt ark,p:- 
-%WER 93.51 [ 288 / 308, 1 ins, 155 del, 132 sub ]
-%SER 97.83 [ 45 / 46 ]
-Scored 46 sentences, 0 not present in hyp.

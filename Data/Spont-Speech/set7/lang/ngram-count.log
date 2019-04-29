@@ -1,7 +1,0 @@
-# ngram-count -vocab /tmp/build_lm.1548717111/vocab -text /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/train/LM_text -order 2 -write /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/lang/G.count -lm /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set7/lang/G.arpa -unk -sort 
-# Started at Mon Jan 28 18:11:51 EST 2019
-#
-warning: discount coeff 1 is out of range: 0
-warning: discount coeff 5 is out of range: 1.35345
-# Accounting: time=0 threads=1
-# Ended (code 0) at Mon Jan 28 18:11:51 EST 2019, elapsed time 0 seconds

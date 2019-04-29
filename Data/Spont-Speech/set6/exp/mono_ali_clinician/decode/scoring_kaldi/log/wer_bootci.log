@@ -1,6 +1,0 @@
-# compute-wer-bootci --mode=present ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/scoring_kaldi/test_filt.txt ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/8.txt > /z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/scoring_kaldi/wer_details/wer_bootci 
-# Started at Mon Jan 28 18:56:20 EST 2019
-#
-compute-wer-bootci --mode=present ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/scoring_kaldi/test_filt.txt ark:/z/mkperez/PremanifestHD-classification/Data/Spont-Speech/set6/exp/mono_ali_clinician/decode/scoring_kaldi/penalty_0.0/8.txt 
-# Accounting: time=0 threads=1
-# Ended (code 0) at Mon Jan 28 18:56:20 EST 2019, elapsed time 0 seconds

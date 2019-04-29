@@ -1,5 +1,0 @@
-SPEAKER          id       #SENT      #WORD       Corr        Sub        Ins        Del        Err      S.Err
-PARTICIPANT87083 raw         32        253         19        122          1        112        235         32
-PARTICIPANT87083 sys         32        253       7.51      48.22       0.40      44.27      92.89     100.00
-SUM              raw         32        253         19        122          1        112        235         32
-SUM              sys         32        253       7.51      48.22       0.40      44.27      92.89     100.00
